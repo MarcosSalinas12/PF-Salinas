@@ -1,0 +1,25 @@
+#pedidos {
+    padding: 20px;
+    margin: 20px;
+    display: block;
+    overflow: hidden;
+    position: static;
+    gap: 20px;
+    color: white;
+  }
+
+  @media (max-width:576px) {
+    main{
+      .Main-pedidos{
+        height: 920px;
+        width: 378px;
+        color: black;
+        background-color: black;
+      }
+    }
+    #pedidos{
+      background-color: rgba(0, 0, 0, 0.562);
+    }
+
+  }
+
