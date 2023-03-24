@@ -48,8 +48,9 @@
     }
 
     .card{
-        padding: 5px;
+        padding: 10px;
         margin-bottom: 10px;
+        --bs-card-spacer-x: 2rem;
     }
 
     h2{
@@ -67,7 +68,10 @@
     }
 
     .inicio {
-    height: 400px;
+        h2{
+            margin: 20px;
+        }
+    height: 1600px;
 
         #carouselExampleRide {
         margin: 0px;
@@ -76,15 +80,21 @@
         align-items: center;}
 
     #banner{
-        height: 10%;
-        background-image: url(/imagenes/banner\ marco\ deportes-03.jpg);
+        height: 100%;
+        background-image: url(/imagenes/banner-marco-deportes-FB-03.png);
         background-repeat: no-repeat;
         background-size: 100%;
         background-attachment: initial;
-        display: flex;
+        display: none;
         align-items: center;
         font-size: 100%;
         padding: 20px;
         margin: 40px;
     }
+
+    .card {
+        height: 100%;
+        flex-direction: column;
+}
+
 }}

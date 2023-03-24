@@ -29,3 +29,9 @@ main {
   width: 378px;
 }
 }
+
+@media (max-width:576px) {
+  body{
+    height: 1800px;
+  }
+}

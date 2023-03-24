@@ -20,7 +20,8 @@ footer {
   height: 15px;
   justify-content: space-between;
   padding: 20px 20px;
-  color: white; }
+  color: white;
+  position: absolute; }
 
 @media (max-width: 576px) {
   footer {
@@ -115,7 +116,7 @@ button {
 body {
   background: #f3f3f4;
   background: linear-gradient(0deg, #f3f3f4 0%, #00a4ff 100%);
-  height: 950px;
+  height: 1100px;
   width: 100%; }
 
 .inicio {
@@ -152,8 +153,9 @@ body {
     .inicio #carouselExampleRide .carousel-control-next, .inicio #carouselExampleRide .carousel-control-prev {
       height: 105%; }
   .inicio .card {
-    padding: 5px;
-    margin-bottom: 10px; }
+    padding: 10px;
+    margin-bottom: 10px;
+    --bs-card-spacer-x: 2rem; }
   .inicio h2 {
     text-align: center;
     font-size: larger;
@@ -164,23 +166,28 @@ body {
     height: 900px;
     width: 378px; }
   .inicio {
-    height: 400px; }
+    height: 1600px; }
+    .inicio h2 {
+      margin: 20px; }
     .inicio #carouselExampleRide {
       margin: 0px;
       width: 390px;
       height: 260px;
       align-items: center; }
     .inicio #banner {
-      height: 10%;
+      height: 100%;
       background-image: url(/imagenes/banner-marco-deportes-FB-03.png);
       background-repeat: no-repeat;
       background-size: 100%;
       background-attachment: initial;
-      display: flex;
+      display: none;
       align-items: center;
       font-size: 100%;
       padding: 20px;
-      margin: 40px; } }
+      margin: 40px; }
+    .inicio .card {
+      height: 100%;
+      flex-direction: column; } }
 
 .muestras #tarjeta-muestras .muestras__titulo {
   position: -20px -300px;
@@ -263,3 +270,7 @@ body {
   main {
     height: 1600px;
     width: 378px; } }
+
+@media (max-width: 576px) {
+  body {
+    height: 1800px; } }
